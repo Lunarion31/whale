@@ -62,7 +62,7 @@ function updateCalendar() {
           const newX = event.clientX - offsetX;
           const newY = event.clientY - offsetY;
 
-          // Get the maximum draggable widht and height
+          // Get the maximum draggable width and height
           maxWidth = window.parentNode.clientWidth - windowWidth;
           maxHeight = window.parentNode.clientHeight - windowHeight;
 
@@ -145,7 +145,7 @@ function updateCalendar() {
     <p>Projects!</p>
     <ul>
     		<li>PrBromine35. Dev team working on chromebook exploits</li>
-        <li>Website: <a href="https://bromine35.netlify.app/">bromine.netlify.app</a></li>
+        <li>Website: <a href="https://bromine35.netlify.app/">bromine35.netlify.app</a></li>
     </ul>
 </div>
 </div>
@@ -469,7 +469,7 @@ function updateCalendar() {
         <li>Email: <a href="mailto:theturtleinwater@gmail.com">theturtleinwater@gmail.com</a></li>
         <li>Discord: @lnarion</li>
         <li>Matrix: <a href="https://matrix.com/@lnarin">@lnarin:matrix.com</a></li>
-        <li>Phone: hi osama </li>
+        <li>Phone: (202)930-2508</li>
     </ul>
 </div>
 </div>
@@ -574,6 +574,7 @@ function updateCalendar() {
     <p>Windows can't go off the screen now</p>
     <p>Still working on that eaglercraft thing, spritz</p> 
     <p>Most recent push: 05/25/2024 @ 3:00:24 PM Eastern Standard Time.</p>
+    <p>Minor patch: 09/31/2024 @ 10:34:17 PM Eastern Standard Time. </p>
 </div>
     `;
           document.body.appendChild(changelogWindow);
