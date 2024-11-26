@@ -664,6 +664,7 @@ function updateCalendar() {
           if (konamiCodePosition === konamiCode.length) {
           	console.log("You found an easter egg!");
             openKonamiWindow();
+            window.open("https://www.youtube.com/watch?v=uR4g9ybkT38", "_blank");
             konamiCodePosition = 0;
           }
         } else {
