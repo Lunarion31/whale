@@ -466,7 +466,7 @@ function updateCalendar() {
         <li>Discord: @yu6x</li>
         <li>Telegram: t.me/homeIandsecurity</li>
         <li>--------lunarion--------</li>
-        <li>Email: <a href="mailto:theturtleinwater@gmail.com">lunarion@whale.lat</a></li>
+        <li>Email: <a href="mailto:lunarion31@whale.lat">lunarion31@whale.lat</a></li>
         <li>Discord: @lunarion31</li>
         <li>Matrix: <a href="https://matrix.com/@lnarin">@lnarin:matrix.com</a></li>
         <li>Phone: (202)930-2508</li>
