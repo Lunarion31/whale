@@ -144,7 +144,7 @@ function updateCalendar() {
       <div class="window-content" style="margin-top: 40px; border: 2px inset #c8c7c7;">
     <p>Projects!</p>
     <ul>
-    		<li>Nothing to see yet</li>
+    		<li>Nothing to see yet!</li>
     </ul>
 </div>
 </div>
