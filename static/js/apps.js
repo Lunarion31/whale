@@ -1,4 +1,3 @@
-// Updates the calendar
 function updateCalendar() {
         const currentDate = new Date();
         const currentDay = currentDate.getDate();
@@ -8,25 +7,19 @@ function updateCalendar() {
         calendarDays.forEach(day => {
           day.style.backgroundColor = "";
           const dayNumber = parseInt(day.textContent);
-          //console.log("Day:", dayNumber, "Should Highlight:", dayNumber === currentDay);
           if (dayNumber === currentDay) {
             day.style.backgroundColor = "lightblue";
           }
         });
       }
 
-
-      // Updates the clock to get recent time
       function updateClock() {
         const now = new Date();
         const hours = now.getHours();
         const minutes = now.getMinutes();
         const seconds = now.getSeconds();
         const meridiem = hours >= 12 ? ' PM' : ' AM';
-
-
         const formattedHours = hours % 12 || 12;
-
         const timeString = `${formattedHours}:${padZero(minutes)}:${padZero(seconds)}${meridiem}`;
         document.querySelector('.clock').textContent = timeString;
       }
@@ -35,13 +28,9 @@ function updateCalendar() {
         return number < 10 ? '0' + number : number;
       }
 
-      // Update the clock every second
       setInterval(updateClock, 1000);
-
-      // Call the function once to initialize the clock
       updateClock();
-      
-      // Window dragging control
+  
       const windows = document.querySelectorAll('.window');
       windows.forEach(window => {
         window.addEventListener('mousedown', startDragging);
@@ -56,20 +45,13 @@ function updateCalendar() {
         const windowWidth = window.offsetWidth;
         const windowHeight = window.offsetHeight;
 
-        //window.parentNode.appendChild(window);
-
         function dragWindow(event) {
           const newX = event.clientX - offsetX;
           const newY = event.clientY - offsetY;
-
-          // Get the maximum draggable width and height
           maxWidth = window.parentNode.clientWidth - windowWidth;
           maxHeight = window.parentNode.clientHeight - windowHeight;
-
-          // Limit newX and newY to prevent window from going off screen
           const clampedX = Math.min(Math.max(newX, 0), maxWidth);
           const clampedY = Math.min(Math.max(newY, -45), (maxHeight + 350));
-
           window.style.left = clampedX + "px";
           window.style.top = clampedY + "px";
 	}
@@ -77,11 +59,8 @@ function updateCalendar() {
         function stopDragging() {
           document.removeEventListener('mousemove', dragWindow);
           document.removeEventListener('mouseup', stopDragging);
-
-          // Reset z-index when dragging stops (optional)
-          window.style.zIndex = ""; // Inherits default z-index
+          window.style.zIndex = ""; 
         }
-
         document.addEventListener('mousemove', dragWindow);
         document.addEventListener('mouseup', stopDragging);
       }
@@ -90,7 +69,6 @@ function updateCalendar() {
         window.addEventListener('mousedown', startDragging);
       }
 
-      // Calculator stuff
       function addToCalc(value) {
         const inputField = document.getElementById('calcInput');
         inputField.value += value;
@@ -112,7 +90,6 @@ function updateCalendar() {
         }
       }
       
-      // Opens the start window
       function toggleDisplayMenu() {
         var startDisplay = document.querySelector(".start-display");
         if (startDisplay.style.display === "none") {
@@ -125,7 +102,6 @@ function updateCalendar() {
       document.querySelector(".start-button").addEventListener("click", toggleDisplayMenu);
 
 
-      // Windows
       function openTempWindow() {
         const existingWindow = document.querySelector('.temp-window');
         if (!existingWindow) {
@@ -585,32 +561,29 @@ function updateCalendar() {
         }
       }
 
-      // Closes the window
+
       function closeWindow(button) {
         const window = button.closest('.window');
         window.remove();
         const taskbarButtons = document.querySelectorAll('.taskbar-button');
         const windowTitle = window.querySelector('.window-title').textContent;
-        //console.log("Window Title:", windowTitle);
         taskbarButtons.forEach(taskbarButton => {
           if (taskbarButton.textContent === windowTitle) {
             taskbarButton.remove();
           }
         });
       }
-      
-      // Minimizes the window
+
       function minimizeWindow(button) {
         const window = button.closest('.window');
         if (window) {
-          const windowRect = window.getBoundingClientRect(); // Get window position
-          window.dataset.prevTop = windowRect.top; // Store position in dataset
+          const windowRect = window.getBoundingClientRect();
+          window.dataset.prevTop = windowRect.top;
           window.dataset.prevLeft = windowRect.left;
           window.style.display = 'none';
         }
       }
       
-      // Toggle the window
       function toggleMinimizedWindow() {
         const window = document.querySelector('.window');
         if (window) {
@@ -622,19 +595,14 @@ function updateCalendar() {
         }
       }
 
-
-      // Makes the taskbar buttons
-      let taskbarButtons = []; // Array to store created buttons
+      let taskbarButtons = []; 
 
       function addTaskbarIcon(label, onClickFunction) {
-        //console.log("Adding taskbar button for: " + label);
         const taskbar = document.querySelector('.taskbar');
         const taskbarButton = document.createElement('div');
         taskbarButton.classList.add('taskbar-button');
         taskbarButton.textContent = label;
         taskbarButton.onclick = window[onClickFunction];
-
-        // Check if a button with the same label already exists
         const existingButton = taskbarButtons.find(button => button.textContent === label);
         taskbarButton.onclick = function() {
         	const windowClass = onClickFunction.replace(/^open(.*)Window$/, '$1').toLowerCase() + '-window';
@@ -672,7 +640,6 @@ function updateCalendar() {
         	konamiCodePosition = 0;
         }
       });
-
 
       function openKonamiWindow() {
         const existingWindow = document.querySelector('.konami-window');
