@@ -120,8 +120,7 @@ function updateCalendar() {
       <div class="window-content" style="margin-top: 40px; border: 2px inset #c8c7c7;">
     <p>Projects!</p>
     <ul>
-    		<li>PrBromine35. Dev team working on chromebook exploits</li>
-        <li>Website: <a href="https://bromine35.netlify.app/">bromine35.netlify.app</a></li>
+    		<li>Nothing here yet, check back later!</li>
     </ul>
 </div>
 </div>
