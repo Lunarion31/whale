@@ -16,10 +16,10 @@ function showBootUpSequence() {
     "Micron Electronics, Inc.",
     "Micron Computer Systems",
   ];
-  
-  
+
+
   const bootUpDelay = Math.trunc(Math.random(10, 20) * 80);
-  const finalDelay = 500; 
+  const finalDelay = 500;
   let currentIndex = 0;
   const audio = document.getElementById('myAudio');
   const loadingTextContainer = document.querySelector('.loading-text');
@@ -29,7 +29,7 @@ function showBootUpSequence() {
     fontFamily: 'Lucida Console, monospace, sans-serif'
   };
   const loadingScreen = document.querySelector('.loading-screen');
-  
+
   const bootUpInterval = setInterval(() => {
     if (currentIndex < bootUpText.length) {
       const loadingText = document.createElement('p');
@@ -39,7 +39,7 @@ function showBootUpSequence() {
       currentIndex++;
     } else {
       clearInterval(bootUpInterval);
-      
+
       const buttonText = "Start";
       const button = document.createElement('button');
       button.textContent = buttonText;
@@ -53,5 +53,5 @@ function showBootUpSequence() {
     }
   }, bootUpDelay);
 }
-      
+
 window.addEventListener('load', showBootUpSequence);
