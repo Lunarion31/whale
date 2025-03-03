@@ -1,3 +1,4 @@
+/* General Styles */
 audio {
   display: none;
 }
@@ -5,13 +6,12 @@ audio {
 body {
   margin: 0;
   padding: 0;
-  background-color: #008080;
-  /* Windows 95 desktop background color */
+  background-color: #008080; /* Windows 95 desktop background color */
   font-family: Monospace, sans-serif;
   overflow: hidden;
 }
 
-
+/* Clock */
 .clock {
   position: fixed;
   bottom: 7px;
@@ -26,19 +26,18 @@ body {
   background-color: rgba(170, 170, 170, 255);
 }
 
+/* Loading Screen */
 .loading-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 8);
-  /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 8); /* Semi-transparent black overlay */
   display: flex;
   align-items: left;
   justify-content: left;
-  z-index: 9999;
-  /* Ensure it's above all other content */
+  z-index: 9999; /* Ensure it's above all other content */
 }
 
 .loading-text {
@@ -46,7 +45,7 @@ body {
   font-size: 16px;
 }
 
-/* Existing styles for other elements */
+/* Window Styles */
 .window {
   position: absolute;
   width: 400px;
@@ -86,13 +85,13 @@ body {
   user-select: none;
 }
 
+/* Desktop Icons */
 .desktop-icons {
   display: flex;
   align-items: middle;
   justify-items: center;
   flex-direction: column;
   user-select: none;
-  /* Updated to cascade down */
 }
 
 .icon {
@@ -111,6 +110,7 @@ body {
   max-height: 100%;
 }
 
+/* Input Fields */
 textarea,
 input {
   width: calc(100% - 23px);
@@ -122,6 +122,7 @@ input {
   border: 2px inset #c8c7c7;
 }
 
+/* Start Menu */
 .start-menu {
   position: fixed;
   bottom: 0;
@@ -153,6 +154,22 @@ input {
   overflow-x: auto;
 }
 
+.start-display .icon {
+  display: block;
+  margin: 20px auto;
+  width: 50px;
+  height: 30px;
+  font-size: 10px;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
+.start-display .icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .start-button {
   width: 50px;
   height: 20px;
@@ -179,22 +196,7 @@ input {
   display: inline-block;
 }
 
-.start-display .icon {
-  display: block;
-  margin: 20px auto;
-  width: 50px;
-  height: 30px;
-  font-size: 10px;
-  cursor: pointer;
-  margin-right: 8px;
-  margin-top: 2px;
-}
-
-.start-display .icon img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
+/* Calendar */
 .calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -212,6 +214,7 @@ input {
   width: 20px;
 }
 
+/* Stars Animation */
 #stars-container {
   pointer-events: none;
   position: absolute;
@@ -244,8 +247,7 @@ input {
 .star.cross::after {
   content: '';
   position: absolute;
-  background-color: inherit;
-  /* Inherit color from parent */
+  background-color: inherit; /* Inherit color from parent */
 }
 
 .star.cross::before {
@@ -266,50 +268,25 @@ input {
 
 .star.blue::before,
 .star.blue::after {
-  background-color: #89CFF0;
-  /* Set blue color */
+  background-color: #89CFF0; /* Set blue color */
 }
 
 .star.white::before,
 .star.white::after {
-  background-color: #fff;
-  /* Set white color */
+  background-color: #fff; /* Set white color */
 }
 
-.star.cross::before {
-  width: 1px;
-  height: 100%;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-}
-
-.star.cross::after {
-  width: 100%;
-  height: 1px;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
+/* Animations */
 @keyframes rotate-animation {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(180deg);
   }
 }
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 8888;
-  pointer-events: none;
-}
-
+/* Calculator Buttons */
 .calculator-button {
   background-color: #f0f0f0;
   border: 2px outset #c8c7c7;
@@ -333,30 +310,12 @@ canvas {
   line-height: 11px;
 }
 
-.test-button {
-  border: 2px outset #c8c7c7;
-}
-
-.start-button:active {
-  border: 2px inset #c0c0c0;
-}
-
-.window-button:active {
-  border: 2px inset #c8c7c7;
-}
-
-.minimize-button:active {
-  border: 2px inset #c8c7c7;
-}
-
-.calculator-button:active {
-  border: 2px inset #c8c7c7;
-}
-
-.test-button:active {
-  border: 2px inset #c8c7c7;
-}
-
+/* Active States */
+.start-button:active,
+.window-button:active,
+.minimize-button:active,
+.calculator-button:active,
+.test-button:active,
 .button-style:active {
   border: 2px inset #c8c7c7;
 }
