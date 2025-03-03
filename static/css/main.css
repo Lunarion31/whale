@@ -1,4 +1,3 @@
-/* General Styles */
 audio {
   display: none;
 }
@@ -6,12 +5,13 @@ audio {
 body {
   margin: 0;
   padding: 0;
-  background-color: #008080; /* Windows 95 desktop background color */
+  background-color: #008080;
+  /* Windows 95 desktop background color */
   font-family: Monospace, sans-serif;
   overflow: hidden;
 }
 
-/* Clock */
+
 .clock {
   position: fixed;
   bottom: 7px;
@@ -23,21 +23,22 @@ body {
   border: 2px inset #c8c7c7;
   width: 120px;
   height: 15px;
-  background-color: #aaa; /* Light gray */
+  background-color: rgba(170, 170, 170, 255);
 }
 
-/* Loading Screen */
 .loading-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 8, 1); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 8);
+  /* Semi-transparent black overlay */
   display: flex;
   align-items: left;
   justify-content: left;
-  z-index: 9999; /* Ensure it's above all other content */
+  z-index: 9999;
+  /* Ensure it's above all other content */
 }
 
 .loading-text {
@@ -45,7 +46,7 @@ body {
   font-size: 16px;
 }
 
-/* Window Styles */
+/* Existing styles for other elements */
 .window {
   position: absolute;
   width: 400px;
@@ -64,7 +65,7 @@ body {
   left: -2px;
   height: 25px;
   width: 100%;
-  background-color: #000080; /* Dark blue */
+  background-color: #000080;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,13 +86,13 @@ body {
   user-select: none;
 }
 
-/* Desktop Icons */
 .desktop-icons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: middle;
+  justify-items: center;
   flex-direction: column;
   user-select: none;
+  /* Updated to cascade down */
 }
 
 .icon {
@@ -110,7 +111,6 @@ body {
   max-height: 100%;
 }
 
-/* Input Fields */
 textarea,
 input {
   width: calc(100% - 23px);
@@ -118,17 +118,16 @@ input {
   margin-top: 10px;
   height: 100px;
   padding: 10px;
-  background-color: #ffffdf; /* Light yellow */
+  background-color: #ffffdf;
   border: 2px inset #c8c7c7;
 }
 
-/* Start Menu */
 .start-menu {
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 20px;
-  background-color: #c0c0c0; /* Light gray */
+  background-color: #c0c0c0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -158,7 +157,7 @@ input {
   width: 50px;
   height: 20px;
   background-color: #c0c0c0;
-  margin: 15px;
+  margin: 15 15px;
   text-align: center;
   line-height: 20px;
   cursor: pointer;
@@ -169,8 +168,8 @@ input {
 .taskbar-button {
   width: 80px;
   height: 20px;
-  background-color: #a9a9a9; /* Dark gray */
-  margin: 15px 5px;
+  background-color: #A9A9A9;
+  margin: 15 5px;
   text-align: center;
   line-height: 20px;
   cursor: pointer;
@@ -196,7 +195,6 @@ input {
   max-height: 100%;
 }
 
-/* Calendar */
 .calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -214,7 +212,6 @@ input {
   width: 20px;
 }
 
-/* Stars Container */
 #stars-container {
   pointer-events: none;
   position: absolute;
@@ -236,7 +233,7 @@ input {
 }
 
 .star.blue {
-  background-color: #89cff0; /* Light blue */
+  background-color: #89CFF0;
 }
 
 .star.cross {
@@ -248,6 +245,35 @@ input {
   content: '';
   position: absolute;
   background-color: inherit;
+  /* Inherit color from parent */
+}
+
+.star.cross::before {
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.star.cross::after {
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.star.blue::before,
+.star.blue::after {
+  background-color: #89CFF0;
+  /* Set blue color */
+}
+
+.star.white::before,
+.star.white::after {
+  background-color: #fff;
+  /* Set white color */
 }
 
 .star.cross::before {
@@ -270,12 +296,12 @@ input {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(180deg);
   }
 }
 
-/* Canvas */
 canvas {
   position: fixed;
   top: 0;
@@ -284,7 +310,6 @@ canvas {
   pointer-events: none;
 }
 
-/* Calculator Buttons */
 .calculator-button {
   background-color: #f0f0f0;
   border: 2px outset #c8c7c7;
@@ -312,12 +337,26 @@ canvas {
   border: 2px outset #c8c7c7;
 }
 
-/* Active States */
-.start-button:active,
-.window-button:active,
-.minimize-button:active,
-.calculator-button:active,
-.test-button:active,
+.start-button:active {
+  border: 2px inset #c0c0c0;
+}
+
+.window-button:active {
+  border: 2px inset #c8c7c7;
+}
+
+.minimize-button:active {
+  border: 2px inset #c8c7c7;
+}
+
+.calculator-button:active {
+  border: 2px inset #c8c7c7;
+}
+
+.test-button:active {
+  border: 2px inset #c8c7c7;
+}
+
 .button-style:active {
   border: 2px inset #c8c7c7;
 }
