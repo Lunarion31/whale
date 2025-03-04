@@ -382,8 +382,8 @@ function openScaratekWindow() {
     "Scaratek",
     ` 
     <div class="about-content" style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2px;">
-        <img src="/static/img/scaratek.png" alt="About Image" draggable="false" style="max-width: 30%; height: 30%; border: 2px outset #c8c7c7;">
-        <div class="about-text" style="border: 2px inset #fff; margin-left: 5px; max-width: 100%;">
+        <img src="/static/img/scaratek.png" alt="About Image" draggable="false" style="max-width: 29%; height: 28%; border: 2px inset #c8c7c7;">
+        <div class="about-text" style="border: 2px outset #fff; margin-left: 2px; max-width: 100%; padding-left: 7px;">
           <p>Wacko programmer on the Internet with a Monster addiction</p>
           <dl>
             <dt> Github: <a href="https://github.com/scaratech/" target="_blank">Github</a></dt>
