@@ -13,5 +13,10 @@ const peopleList = [
       name: "Madjikware",
       image: "/static/img/Maddie.jpeg",
       onClick: "openMaddieWindow()",
+    }
+    {
+      name: "korn(y)",
+      image: "/path/to/kornyperson.png",
+      onClick: "openkornypersonWindow()",
     },
   ];
