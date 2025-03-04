@@ -352,8 +352,6 @@ function openChangelogWindow() {
   );
 }
 
-
-
 function openPeopleWindow() {
   const peopleContent = `
     <div class="desktop-icons">
