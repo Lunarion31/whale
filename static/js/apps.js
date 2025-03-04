@@ -420,6 +420,28 @@ function openBoeingWindow() {
     "100px"
   );
 }
+
+function openMaddieWindow() {
+  createWindow(
+    "Madjikware",
+    ` 
+    <div class="about-content" style="display: flex; justify-content: left; align-items: flex-start; margin-top: 2px;">
+        <img src="/static/img/Maddie.jpeg" alt="About Image" draggable="false" style="max-width: 30%; height: 30%; border: 2px outset #c8c7c7;">
+        <div class="about-text" style="border: 2px inset #fff; margin-left: 5px; width: 300px;">
+          <p>Owner of <a href="https://stargazecollective.org/">Stargaze</a></p>
+          <dl>
+            <dt>Github: <a href="https://github.com/MadjikDotPng/" target="_blank">Github</a></dt>
+            <dt>Discord: madjikware</dt>
+            <dt>MGMT: hi@stargazecollective.org</dt>
+          </dl>
+        </div>
+      </div>
+    `,
+    "maddie-window",
+    "100px",
+    "100px"
+  );
+}
 // calculator
 function addToCalc(value) {
   const inputField = document.getElementById('calcInput');
