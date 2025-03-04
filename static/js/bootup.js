@@ -17,22 +17,22 @@ function showBootUpSequence() {
     "Micron Computer Systems",
   ];
 
-  const bootUpDelay = Math.trunc(Math.random() * 80) + 10; // Random delay between 10ms and 90ms
-  const finalDelay = 500; // Delay before showing the "Start" button
+  const bootUpDelay = Math.trunc(Math.random() * 80) + 10; // generates a random delay
+  const finalDelay = 500; // delay
   let currentIndex = 0;
 
   const audio = document.getElementById('myAudio');
   const loadingTextContainer = document.querySelector('.loading-text');
   const loadingScreen = document.querySelector('.loading-screen');
 
-  // Styles for boot-up text
+  // styles
   const textStyles = {
     color: '#fff',
     fontSize: '10px',
     fontFamily: 'Lucida Console, monospace, sans-serif',
   };
 
-  // Function to display boot-up text
+  // display boot text
   const displayText = () => {
     if (currentIndex < bootUpText.length) {
       const loadingText = document.createElement('p');
@@ -43,7 +43,6 @@ function showBootUpSequence() {
     } else {
       clearInterval(bootUpInterval);
 
-      // Add "Start" button
       const button = document.createElement('button');
       button.textContent = "Start";
       button.classList.add('button-styles');
@@ -56,9 +55,7 @@ function showBootUpSequence() {
     }
   };
 
-  // Start the boot-up sequence
   const bootUpInterval = setInterval(displayText, bootUpDelay);
 }
 
-// Trigger boot-up sequence when the page loads
 window.addEventListener('load', showBootUpSequence);

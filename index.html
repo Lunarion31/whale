@@ -11,28 +11,23 @@
   <meta property="og:url" content="https://whale.lat/">
   <meta content="#008080" data-react-helmet="true" name="theme-color">
   <link rel="icon" href="https://whale.lat/static/img/51f6fn.png" type="image/png" sizes="64x64">
-  <!-- Use local CSS file -->
   <link rel="stylesheet" href="static/css/main.css">
 </head>
 
 <body>
-  <!-- Loading Screen -->
   <div class="loading-screen">
     <div class="loading-text">
       <audio id="myAudio" autoplay>
-        <!-- Use local audio file -->
         <source src="/static/img/videoplayback.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
     </div>
   </div>
 
-  <!-- Welcome Window -->
   <div class="window welcome-window" style="left: 122px; width: 700px; border: 2px outset #ebebeb;">
     <div class="window-titlebar" style="margin-left: 2px; margin-top: 29px; width: 100%">
       <div class="window-title" style="margin-left: 5px;">Welcome to Windows 98!</div>
       <div class="window-buttons" style="margin-right: 5px; margin-top: 3px;">
-        <!-- Use local image files -->
         <img src="/static/img/minimize.png" alt="Close" class="window-button" onclick="closeWindow(this)">
         <img src="/static/svg/lyt65r.svg" alt="Minimize" class="window-button" onclick="minimizeWindow(this)">
       </div>
@@ -44,7 +39,6 @@
         <button class="test-button" onclick="openProjectWindow()">Credits</button>
         <button class="test-button" onclick="openTempWindow()">Projects</button>
       </div>
-      <!-- Use local image file -->
       <img src="/static/img/b8361cd88301da5372f86efff22d950c16dbed9b.gif" alt="About Image" draggable="false" style="max-width: 75%; height: 70%; margin-top: 5px; border: 2px outset #c8c7c7;">
     </div>
   </div>
@@ -53,42 +47,34 @@
   <canvas id="sparkleCanvas"></canvas>
   -->
   
-  <!-- Desktop Icons -->
   <div class="desktop-icons">
     <div class="icon notepad-icon" style="top: 20px; left: 20px;" onclick="openNotepadWindow()">
-      <!-- Use local image file -->
       <img src="https://whale.lat/static/img/notepad.png" alt="Notepad" draggable="false">
       <p>Notepad</p>
     </div>
     <div class="icon calculator-icon" style="top: 20px; left: 100px;" onclick="openCalculatorWindow()">
-      <!-- Use local image file -->
       <img src="/static/img/calculator.png" alt="Calculator" draggable="false">
       <p>Calculator</p>
     </div>
     <div class="icon calendar-icon" style="top: 20px; left: 180px;" onclick="openCalendarWindow()">
-      <!-- Use local image file -->
       <img src="/static/img/calendar.png" alt="Calendar" draggable="false">
       <p>Calendar</p>
     </div>
     <div class="icon settings-icon" style="top: 20px; left: 260px;" onclick="openSettingsWindow()">
-      <!-- Use local image file -->
       <img src="/static/img/settings.png" alt="Settings" draggable="false">
       <p>Settings</p>
     </div>
     <div class="icon changelog-icon" style="top: 20px; left: 340px;" onclick="openChangelogWindow()">
-      <!-- Use local image file -->
       <img src="/static/img/notebook.png" alt="Changelog" draggable="false">
       <p>Changelog</p>
     </div>
     <div class="icon cool-icon" style="top: 20px; left: 340px;" onclick="openCoolWindow()">
-      <!-- Use local image file -->
       <img src="/static/img/games.png" alt="Cool" draggable="false">
       <p>Other</p>
       <p>Stuff</p>
     </div>
   </div>
 
-  <!-- Start Menu -->
   <div class="start-menu">
     <div class="start-button">Start</div>
     <div class="taskbar"></div>
@@ -96,48 +82,40 @@
     <div class="clock" id="clock"></div>
   </div>
 
-  <!-- Start Display (Hidden by Default) -->
   <div class="start-display" style="display: none;">
     <div class="icon notepad-icon" style="top: 20px; left: 20px;" onclick="openNotepadWindow()">
-      <!-- Use local image file -->
       <img src="/static/img/notepad.png" alt="Notepad" draggable="false">
       <p>Notepad</p>
     </div>
     <div class="icon calculator-icon" style="top: 20px; left: 100px;" onclick="openCalculatorWindow()">
-      <!-- Use local image file -->
       <img src="/static/img/calculator.png" alt="Calculator" draggable="false">
       <p>Calculator</p>
     </div>
     <div class="icon calendar-icon" style="top: 20px; left: 180px;" onclick="openCalendarWindow()">
-      <!-- Use local image file -->
       <img src="/static/img/calendar.png" alt="Calendar" draggable="false">
       <p>Calendar</p>
     </div>
     <div class="icon settings-icon" style="top: 20px; left: 260px;" onclick="openSettingsWindow()">
-      <!-- Use local image file -->
       <img src="/static/img/settings.png" alt="Settings" draggable="false">
       <p>Settings</p>
     </div>
     <div class="icon changelog-icon" style="top: 20px; left: 340px;" onclick="openChangelogWindow()">
-      <!-- Use local image file -->
       <img src="/static/img/notebook.png" alt="Changelog" draggable="false">
       <p>Changelog</p>
     </div>
     <div class="icon about-icon" style="top: 20px; left: 420px;" onclick="openAboutWindow()">
-      <!-- Use local image file -->
       <img src="/static/img/about.png" alt="About" draggable="false">
       <p>About</p>
     </div>
   </div>
 
-  <!-- Use local JavaScript files -->
   <script src="static/js/bootup.js"></script>
   <script src="static/js/apps.js"></script>
 
-  <!-- Stars Container -->
+  <!-- stars container
   <div id="stars-container"></div>
-
-  <!-- Commented-Out Scripts (For Future Use) -->
+-->
+  <!-- I'm using these later -->
   <!--- 
     <script src="./stars.js"></script> 
     <script src="./canvas.js"></script> 

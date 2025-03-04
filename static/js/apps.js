@@ -28,9 +28,9 @@ function startDragging(e) {
     const newX = event.clientX - offsetX;
     const newY = event.clientY - offsetY;
     const maxWidth = window.parentNode.clientWidth - window.offsetWidth;
-    const maxHeight = window.parentNode.clientHeight;
+    const maxHeight = document.documentElement.scrollHeight - window.offsetHeight;
     const clampedX = Math.min(Math.max(newX, 0), maxWidth);
-    const clampedY = Math.min(Math.max(newY, -45), (maxHeight + 200));
+    const clampedY = Math.min(Math.max(newY, -45), (maxHeight));
     window.style.left = `${clampedX}px`;
     window.style.top = `${clampedY}px`;
   }
@@ -44,7 +44,7 @@ function startDragging(e) {
   document.addEventListener('mouseup', stopDragging);
 }
 
-// Window Management
+// window creation
 function createWindow(title, content, className, top = '100px', left = '100px') {
   const existingWindow = document.querySelector(`.${className}`);
   if (!existingWindow) {
@@ -92,7 +92,7 @@ function minimizeWindow(button) {
   }
 }
 
-// Taskbar Management
+// taskbar
 let taskbarButtons = [];
 
 function addTaskbarIcon(label, onClickFunction, className) {
@@ -112,7 +112,7 @@ function addTaskbarIcon(label, onClickFunction, className) {
   taskbarButtons.push(taskbarButton);
 }
 
-// Specific Window Functions
+// window related specifics
 function openTempWindow() {
   createWindow(
     'Projects',
@@ -351,7 +351,7 @@ function openChangelogWindow() {
   );
 }
 
-// Calculator Functions
+// calculator
 function addToCalc(value) {
   const inputField = document.getElementById('calcInput');
   inputField.value += value;
@@ -373,7 +373,7 @@ function calculate() {
   }
 }
 
-// Clock
+// clock
 function updateClock() {
   const now = new Date();
   const hours = now.getHours();
@@ -388,7 +388,7 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-// Calendar
+// calendar
 function updateCalendar() {
   const currentDate = new Date();
   const currentDay = currentDate.getDate();
@@ -403,7 +403,7 @@ function updateCalendar() {
   });
 }
 
-// Start Menu
+// start menu
 function toggleDisplayMenu() {
   const startDisplay = document.querySelector(".start-display");
   startDisplay.style.display = startDisplay.style.display === "none" ? "block" : "none";
@@ -411,7 +411,7 @@ function toggleDisplayMenu() {
 
 document.querySelector(".start-button").addEventListener("click", toggleDisplayMenu);
 
-// Easter Egg (Konami Code)
+// shhhhhhh
 const konamiCode = [
   "ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "KeyB", "KeyA"
 ];

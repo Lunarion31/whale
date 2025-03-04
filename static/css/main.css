@@ -26,18 +26,17 @@ body {
   background-color: rgba(170, 170, 170, 255);
 }
 
-/* Loading Screen */
 .loading-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 8); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 8); 
   display: flex;
   align-items: left;
   justify-content: left;
-  z-index: 9999; /* Ensure it's above all other content */
+  z-index: 9999;
 }
 
 .loading-text {
@@ -45,7 +44,6 @@ body {
   font-size: 16px;
 }
 
-/* Window Styles */
 .window {
   position: absolute;
   width: 400px;
@@ -85,7 +83,6 @@ body {
   user-select: none;
 }
 
-/* Desktop Icons */
 .desktop-icons {
   display: flex;
   align-items: middle;
@@ -110,7 +107,6 @@ body {
   max-height: 100%;
 }
 
-/* Input Fields */
 textarea,
 input {
   width: calc(100% - 23px);
@@ -122,7 +118,6 @@ input {
   border: 2px inset #c8c7c7;
 }
 
-/* Start Menu */
 .start-menu {
   position: fixed;
   bottom: 0;
@@ -196,7 +191,6 @@ input {
   display: inline-block;
 }
 
-/* Calendar */
 .calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -214,7 +208,6 @@ input {
   width: 20px;
 }
 
-/* Stars Animation */
 #stars-container {
   pointer-events: none;
   position: absolute;
@@ -247,7 +240,7 @@ input {
 .star.cross::after {
   content: '';
   position: absolute;
-  background-color: inherit; /* Inherit color from parent */
+  background-color: inherit;
 }
 
 .star.cross::before {
@@ -268,15 +261,14 @@ input {
 
 .star.blue::before,
 .star.blue::after {
-  background-color: #89CFF0; /* Set blue color */
+  background-color: #89CFF0;
 }
 
 .star.white::before,
 .star.white::after {
-  background-color: #fff; /* Set white color */
+  background-color: #fff;
 }
 
-/* Animations */
 @keyframes rotate-animation {
   from {
     transform: rotate(0deg);
@@ -286,7 +278,6 @@ input {
   }
 }
 
-/* Calculator Buttons */
 .calculator-button {
   background-color: #f0f0f0;
   border: 2px outset #c8c7c7;
@@ -310,7 +301,6 @@ input {
   line-height: 11px;
 }
 
-/* Active States */
 .start-button:active,
 .window-button:active,
 .minimize-button:active,
