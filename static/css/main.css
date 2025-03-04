@@ -36,7 +36,7 @@ body {
   display: flex;
   align-items: left;
   justify-content: left;
-  z-index: 9999;
+  z-index: 9999999999999;
 }
 
 .loading-text {
