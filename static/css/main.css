@@ -119,6 +119,7 @@ input {
 }
 
 .start-menu {
+  z-index: 999999999;
   position: fixed;
   bottom: 0;
   width: 100%;
