@@ -5,9 +5,9 @@ const peopleList = [
       onClick: "openScaratekWindow()",
     },
     {
-      name: "Person 2",
-      image: "/path/to/person2.png",
-      onClick: "openPerson2Window()",
+      name: "Boeing747",
+      image: "/static/img/boeing.jpg",
+      onClick: "openBoeingWindow()",
     },
     {
       name: "Person 3",

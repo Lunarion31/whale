@@ -399,6 +399,27 @@ function openScaratekWindow() {
   );
 }
 
+function openBoeingWindow() {
+  createWindow(
+    "Boeing747",
+    ` 
+    <div class="about-content" style="display: flex; justify-content: left; align-items: flex-start; margin-top: 2px;">
+        <img src="/static/img/boeing.jpg" alt="About Image" draggable="false" style="max-width: 30%; height: 30%; border: 2px outset #c8c7c7;">
+        <div class="about-text" style="border: 2px inset #fff; margin-left: 5px; width: 300px;">
+          <p>Skid (/s)</p>
+          <dl>
+            <dt>Github: <a href="https://github.com/notboeing747/" target="_blank">Github</a></dt>
+            <dt>Discord: notboeing747</dt>
+            <dt>Signal: @boeing.47</dt>
+          </dl>
+        </div>
+      </div>
+    `,
+    "boeing-window",
+    "100px",
+    "100px"
+  );
+}
 // calculator
 function addToCalc(value) {
   const inputField = document.getElementById('calcInput');
