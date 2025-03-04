@@ -118,7 +118,7 @@ function openTempWindow() {
     'Projects',
     `<p>Projects!</p>
     <ul>
-    <li>Percury Mercshop: <a href="https://percurymerc.shop/">Percury Mercshop</a></li>
+    <li>Percury Mercshop: <a href="https://percurymerc.shop/" target="_blank">Percury Mercshop</a></li>
     </ul>`,
     'temp-window',
     '100px',
@@ -272,15 +272,15 @@ function openContactWindow() {
       <p>You can contact me via:</p>
       <ul>
         <li>--------yuko---------</li>
-        <li>Email: <a href="mailto:yuko@slimepointe.top">yuko@slimepointe.top</a></li>
+        <li>Email: <a href="mailto:yuko@slimepointe.top" target="_blank">yuko@slimepointe.top</a></li>
         <li>Discord: @yu6x</li>
         <li>Telegram: t.me/homeIandsecurity</li>
         <li>--------lunarion--------</li>
-        <li>Email: <a href="mailto:lunarion31@whale.lat">lunarion31@whale.lat</a></li>
+        <li>Email: <a href="mailto:lunarion31@whale.lat" target="blank">lunarion31@whale.lat</a></li>
         <li>Discord: @lunarion31</li>
-        <li>Matrix: <a href="https://matrix.com/@lnarin">@lnarin:matrix.com</a></li>
+        <li>Matrix: <a href="https://matrix.com/@lnarin" target="_blank">@lnarin:matrix.com</a></li>
         <li>Phone: (202)930-2508</li>
-        <li>Bluesky: <a href="https://bsky.app/profile/lunarion31.bsky.social">Bluesky</a></li>
+        <li>Bluesky: <a href="https://bsky.app/profile/lunarion31.bsky.social" target="_blank">Bluesky</a></li>
       </ul>
     `,
     'contact-window',
@@ -386,9 +386,9 @@ function openScaratekWindow() {
         <div class="about-text" style="border: 2px inset #fff; margin-left: 5px; max-width: 100%;">
           <p>Wacko programmer on the Internet with a Monster addiction</p>
           <dl>
-            <dt> Github: <a href="https://github.com/scaratech/">Github</a></dt>
+            <dt> Github: <a href="https://github.com/scaratech/" target="_blank">Github</a></dt>
             <dt>Discord: Scaratech</dt>
-            <dt> Website: <a href="https://korone.cloud/">korone.cloud</a></dt>
+            <dt> Website: <a href="https://korone.cloud/" target="_blank">korone.cloud</a></dt>
           </dl>
         </div>
       </div>
