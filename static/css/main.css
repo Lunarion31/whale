@@ -302,6 +302,34 @@ input {
   line-height: 11px;
 }
 
+.test-button {
+  border: 2px outset #c8c7c7;
+}
+
+.start-button:active {
+  border: 2px inset #c0c0c0;
+}
+
+.window-button:active {
+  border: 2px inset #c8c7c7;
+}
+
+.minimize-button:active {
+  border: 2px inset #c8c7c7;
+}
+
+.calculator-button:active {
+  border: 2px inset #c8c7c7;
+}
+
+.test-button:active {
+  border: 2px inset #c8c7c7;
+}
+
+.button-style:active {
+  border: 2px inset #c8c7c7;
+}
+
 .start-button:active,
 .window-button:active,
 .minimize-button:active,
