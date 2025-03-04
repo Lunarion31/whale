@@ -60,7 +60,7 @@ function createWindow(title, content, className, top = '100px', left = '100px') 
           <img src="https://whale.lat/static/svg/lyt65r.svg" alt="Close" class="window-button" onclick="closeWindow(this)">
         </div>
       </div>
-      <div class="window-content" style="margin-top: 40px; border: 2px inset #c8c7c7;">
+      <div class="window-content" style="margin-top: 30px; border: 2px inset #c8c7c7;">
         ${content}
       </div>
     `;
@@ -349,6 +349,55 @@ function openChangelogWindow() {
     'changelog-window',
     '100px',
     '100px'
+  );
+}
+
+
+
+function openPeopleWindow() {
+  const peopleContent = `
+    <div class="desktop-icons">
+      ${peopleList
+        .map(
+          (person) => `
+        <div class="icon placeholder-icon" style="top: 20px; left: 20px;" onclick="${person.onClick}">
+          <img src="${person.image}" alt="${person.name}" draggable="false">
+          <p>${person.name}</p>
+        </div>
+      `
+        )
+        .join("")}
+    </div>
+  `;
+
+  createWindow(
+    "People",
+    peopleContent,
+    "people-window",
+    "100px",
+    "450px"
+  );
+}
+
+function openScaratekWindow() {
+  createWindow(
+    "Scaratek",
+    ` 
+    <div class="about-content" style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2px;">
+        <img src="/static/img/scaratek.png" alt="About Image" draggable="false" style="max-width: 30%; height: 30%; border: 2px outset #c8c7c7;">
+        <div class="about-text" style="border: 2px inset #fff; margin-left: 5px; max-width: 100%;">
+          <p>Wacko programmer on the Internet with a Monster addiction</p>
+          <dl>
+            <dt> Github: <a href="https://github.com/scaratek/">Github</a></dt>
+            <dt>Discord: Scaratech</dt>
+            <dt> Website: <a href="https://korone.cloud/">korone.cloud</a></dt>
+          </dl>
+        </div>
+      </div>
+      `,
+    "scaratek-window",
+    "100px",
+    "100px"
   );
 }
 
