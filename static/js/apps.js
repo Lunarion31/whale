@@ -386,7 +386,7 @@ function openScaratekWindow() {
         <div class="about-text" style="border: 2px inset #fff; margin-left: 5px; max-width: 100%;">
           <p>Wacko programmer on the Internet with a Monster addiction</p>
           <dl>
-            <dt> Github: <a href="https://github.com/scaratek/">Github</a></dt>
+            <dt> Github: <a href="https://github.com/scaratech/">Github</a></dt>
             <dt>Discord: Scaratech</dt>
             <dt> Website: <a href="https://korone.cloud/">korone.cloud</a></dt>
           </dl>
