@@ -10,8 +10,8 @@ const peopleList = [
       onClick: "openBoeingWindow()",
     },
     {
-      name: "Person 3",
-      image: "/path/to/person3.png",
-      onClick: "openPerson3Window()",
+      name: "Madjikware",
+      image: "/static/img/Maddie.jpeg",
+      onClick: "openMaddieWindow()",
     },
   ];
