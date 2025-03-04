@@ -337,12 +337,13 @@ function openChangelogWindow() {
     `
       <p>Changelog:</p>
       <p>Changes this update:</p>
-      <p>Graphics overhaul is pretty much complete, patching out a few bugs</p>
-      <p>Fixed dragging</p>
-      <p>Potential maximize button</p>
-      <p>Windows can't go off the screen now</p>
+      <p>MASSIVE code cleanup</p>
+      <p>I'm kinda tired of fixing the godforsaken drag so just deal with your window going all the way off the edge</p>
+      <p>fuck that maximize button</p>
+      <p>your windows now change their z position!!!!!!!!!!!!</p>
       <p>Still working on that eaglercraft thing, spritz</p> 
-      <p>Most recent push: 05/25/2024 @ 3:00:24 PM Eastern Standard Time.</p>
+      <p>Past recent push: 05/25/2024 @ 3:00:24 PM Eastern Standard Time.</p>
+      <p>Most recent push: 03/03/2025 @ 7:03:20 PM Eastern Standard Time
       <p>Minor patch: 09/31/2024 @ 10:34:17 PM Eastern Standard Time. </p>
     `,
     'changelog-window',
