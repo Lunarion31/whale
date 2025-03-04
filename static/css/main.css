@@ -289,7 +289,6 @@ input {
 }
 
 .button-styles {
-  position: absolute;
   font-family: Monospace, sans-serif;
   background-color: #c8c7c7;
   width: 70px;
@@ -298,8 +297,7 @@ input {
   border: 2px outset #c8c7c7;
   border-radius: 0;
   cursor: pointer;
-  text-align: center;
-  line-height: 11px;
+  line-height: 4px;
 }
 
 .test-button {
