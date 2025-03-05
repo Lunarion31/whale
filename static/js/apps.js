@@ -371,7 +371,7 @@ function openChangelogWindow() {
 function openPeopleWindow() {
   const iconSize = 80;
   const iconsPerRow = 4;
-  const padding = 12;
+  const padding = 18;
 
   const numRows = Math.ceil(peopleList.length / iconsPerRow);
 
