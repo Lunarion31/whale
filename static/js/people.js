@@ -18,5 +18,10 @@ const peopleList = [
         name: "Test",
         image: "/static/img/placeholder.png",
         onClick: "openTestWindow()",
-      },
+    },
+    {
+        name: "xmb9",
+        image: "/static/img/xmb9.png",
+        onClick: "openxmb9Window()",
+    },
   ];
