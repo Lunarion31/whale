@@ -14,4 +14,9 @@ const peopleList = [
       image: "/static/img/Maddie.jpeg",
       onClick: "openMaddieWindow()",
     },
+    {
+        name: "Test",
+        image: "/static/img/placeholder.png",
+        onClick: "openTestWindow()",
+      },
   ];

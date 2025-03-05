@@ -7,7 +7,7 @@ let zIndexCounter = 1;
 
 function makeDraggable(window) {
   window.addEventListener('mousedown', () => {
-    window.style.zIndex = ++zIndexCounter; 
+    window.style.zIndex = ++zIndexCounter;
   });
 
   window.addEventListener('mousedown', startDragging);
@@ -23,7 +23,7 @@ function startDragging(e) {
   const rect = window.getBoundingClientRect();
   let offsetX = e.clientX - rect.left;
   let offsetY = e.clientY - rect.top + 45;
-  
+
   function dragWindow(event) {
     const newX = event.clientX - offsetX;
     const newY = event.clientY - offsetY;
@@ -60,7 +60,7 @@ function createWindow(title, content, className, top = '100px', left = '100px') 
           <img src="https://whale.lat/static/svg/lyt65r.svg" alt="Close" class="window-button" onclick="closeWindow(this)">
         </div>
       </div>
-      <div class="window-content" style="margin-top: 30px; border: 2px inset #c8c7c7;">
+      <div class="window-content" style="margin-top: 30px; border: 2px  #c8c7c7;">
         ${content}
       </div>
     `;
@@ -116,10 +116,15 @@ function addTaskbarIcon(label, onClickFunction, className) {
 function openTempWindow() {
   createWindow(
     'Projects',
-    `<p>Projects!</p>
-    <ul>
-    <li>Percury Mercshop: <a href="https://percurymerc.shop/" target="_blank">Percury Mercshop</a></li>
-    </ul>`,
+    `
+    <div class="about-content" style="display: flex; justify-content: left; align-items: flex-start; margin-top: 2px;">
+      <div class="about-text" style="border: 2px inset #fff; margin-left: 2px; width: 450px; padding-right: 3px; padding-left: 3px;">
+        <p>Projects!</p>
+        <ul>
+          <li>Percury Mercshop: <a href="https://percurymerc.shop/" target="_blank">Percury Mercshop</a></li>
+        </ul>
+    </div>
+    `,
     'temp-window',
     '100px',
     '450px'
@@ -247,7 +252,7 @@ function openCalendarWindow() {
   createWindow(
     'Calendar',
     `
-      <div class="calendar">
+      <div class="calendar" style="padding: 4px;">
         <div class="calendar-day">Sun</div>
         <div class="calendar-day">Mon</div>
         <div class="calendar-day">Tue</div>
@@ -269,19 +274,22 @@ function openContactWindow() {
   createWindow(
     'Contact',
     `
-      <p>You can contact me via:</p>
-      <ul>
-        <li>--------yuko---------</li>
-        <li>Email: <a href="mailto:yuko@slimepointe.top" target="_blank">yuko@slimepointe.top</a></li>
-        <li>Discord: @yu6x</li>
-        <li>Telegram: t.me/homeIandsecurity</li>
-        <li>--------lunarion--------</li>
-        <li>Email: <a href="mailto:lunarion31@whale.lat" target="blank">lunarion31@whale.lat</a></li>
-        <li>Discord: @lunarion31</li>
-        <li>Matrix: <a href="https://matrix.com/@lnarin" target="_blank">@lnarin:matrix.com</a></li>
-        <li>Phone: (202)930-2508</li>
-        <li>Bluesky: <a href="https://bsky.app/profile/lunarion31.bsky.social" target="_blank">Bluesky</a></li>
-      </ul>
+    <div class="about-content" style="display: flex; justify-content: left; align-items: flex-start; margin-top: 2px;">
+      <div class="about-text" style="border: 2px inset #fff; margin-left: 2px; width: 450px; padding-right: 3px; padding-left: 3px;">
+        <p>You can contact me via:</p>
+        <ul>
+          <li>--------yuko---------</li>
+          <li>Email: <a href="mailto:yuko@slimepointe.top" target="_blank">yuko@slimepointe.top</a></li>
+          <li>Discord: @yu6x</li>
+          <li>Telegram: t.me/homeIandsecurity</li>
+          <li>--------lunarion--------</li>
+          <li>Email: <a href="mailto:lunarion31@whale.lat" target="blank">lunarion31@whale.lat</a></li>
+          <li>Discord: @lunarion31</li>
+          <li>Matrix: <a href="https://matrix.com/@lnarin" target="_blank">@lnarin:matrix.com</a></li>
+          <li>Phone: (202)930-2508</li>
+          <li>Bluesky: <a href="https://bsky.app/profile/lunarion31.bsky.social" target="_blank">Bluesky</a></li>
+        </ul>
+      </div>
     `,
     'contact-window',
     '100px',
@@ -293,17 +301,20 @@ function openProjectWindow() {
   createWindow(
     'Credits',
     `
-      <p>Thanks to those who helped me:</p>
-      <ul>
-        <li> yuko, literally made this code better. </li>
-        <li> <a href="https://github.com/yu6x">yuko's github</a></li>
-        <li> sydney, site tester. </li>
-        <li> wearr, great web dev </li>
-        <li> <a href="https://github.com/wearrrrr">wearr's github</a></li>
-        <li> interpolation, made the sparkles javascript and css </li>
-        <li> kxtzownsu, fix contact box and embed </li>
-        <li> <a href="https://kxtz.dev">kxtzownsu's website</a></li>
-      </ul>
+    <div class="about-content" style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2px;">
+      <div class="about-text" style="border: 2px inset #fff; margin-left: 2px; max-width: 100%; padding-right: 3px; padding-left: 3px;">
+        <p>Thanks to those who helped me:</p>
+        <ul>
+          <li> yuko, literally made this code better. </li>
+          <li> <a href="https://github.com/yu6x" target="_blank">yuko's github</a></li>
+          <li> sydney, site tester. </li>
+          <li> wearr, great web dev </li>
+          <li> <a href="https://github.com/wearrrrr" target="_blank">wearr's github</a></li>
+          <li> interpolation, made the sparkles javascript and css </li>
+          <li> kxtzownsu, fix contact box and embed </li>
+          <li> <a href="https://kxtz.dev" target="blank">kxtzownsu's website</a></li>
+        </ul>
+      </div>
     `,
     'project-window',
     '320px',
@@ -335,16 +346,21 @@ function openChangelogWindow() {
   createWindow(
     'Changelog',
     `
-      <p>Changelog:</p>
-      <p>Changes this update:</p>
-      <p>MASSIVE code cleanup</p>
-      <p>I'm kinda tired of fixing the godforsaken drag so just deal with your window going all the way off the edge</p>
-      <p>fuck that maximize button</p>
-      <p>your windows now change their z position!!!!!!!!!!!!</p>
-      <p>Still working on that eaglercraft thing, spritz</p> 
-      <p>Past recent push: 05/25/2024 @ 3:00:24 PM Eastern Standard Time.</p>
-      <p>Most recent push: 03/03/2025 @ 7:03:20 PM Eastern Standard Time
-      <p>Minor patch: 09/31/2024 @ 10:34:17 PM Eastern Standard Time. </p>
+    <div class="about-content" style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2px;">
+        <div class="about-text" style="border: 2px inset #fff; margin-left: 2px; max-width: 100%; padding-right: 3px; padding-left: 3px;">
+        <p>Changelog:</p>
+        <ul>
+          <li>Changes this update:</li>
+          <li>MASSIVE code cleanup</li>
+          <li>I'm kinda tired of fixing the godforsaken drag so just deal with your window going all the way off the edge</li>
+          <li>fuck that maximize button</li>
+          <li>your windows now change their z position!!!!!!!!!!!!</li>
+          <li>Still working on that eaglercraft thing, spritz</li> 
+          <li>Past recent push: 05/25/2024 @ 3:00:24 PM Eastern Standard Time.</li>
+          <li>Most recent push: 03/03/2025 @ 7:03:20 PM Eastern Standard Time
+          <li>Minor patch: 09/31/2024 @ 10:34:17 PM Eastern Standard Time. </li>
+        </ul>
+    </div>
     `,
     'changelog-window',
     '100px',
@@ -353,9 +369,9 @@ function openChangelogWindow() {
 }
 
 function openPeopleWindow() {
-  const iconSize = 80; 
+  const iconSize = 80;
   const iconsPerRow = 4;
-  const padding = 20; 
+  const padding = 12;
 
   const numRows = Math.ceil(peopleList.length / iconsPerRow);
 
@@ -363,17 +379,17 @@ function openPeopleWindow() {
   const windowHeight = numRows * iconSize + padding * 2;
 
   const peopleContent = `
-    <div class="desktop-icons" style="display: grid; grid-template-columns: repeat(${iconsPerRow}, 1fr); gap: 10px; padding: ${padding}px;">
+    <div class="desktop-icons" style="display: grid; grid-template-columns: repeat(${iconsPerRow}, 1fr); gap: 10px; padding-bottom: ${padding}px;">
       ${peopleList
-        .map(
-          (person) => `
+      .map(
+        (person) => `
         <div class="icon placeholder-icon" onclick="${person.onClick}">
           <img src="${person.image}" alt="${person.name}" draggable="false" style="width: 100%; height: 100%; border: 2px inset #fff">
           <p>${person.name}</p>
         </div>
       `
-        )
-        .join("")}
+      )
+      .join("")}
     </div>
   `;
 
@@ -415,8 +431,8 @@ function openBoeingWindow() {
     "Boeing747",
     ` 
     <div class="about-content" style="display: flex; justify-content: left; align-items: flex-start; margin-top: 2px;">
-        <img src="/static/img/boeing.jpg" alt="About Image" draggable="false" style="max-width: 30%; height: 30%; border: 2px outset #c8c7c7;">
-        <div class="about-text" style="border: 2px inset #fff; margin-left: 5px; width: 300px;">
+        <img src="/static/img/boeing.jpg" alt="About Image" draggable="false" style="max-width: 30%; height: 30%; border: 2px inset #c8c7c7;">
+        <div class="about-text" style="border: 2px outset #fff; margin-left: 5px; width: 300px; height: 105px; padding: 7px;">
           <p>Skid (/s)</p>
           <dl>
             <dt>Github: <a href="https://github.com/notboeing747/" target="_blank">Github</a></dt>
@@ -449,6 +465,25 @@ function openMaddieWindow() {
       </div>
     `,
     "maddie-window",
+    "100px",
+    "100px"
+  );
+}
+
+function openTestWindow() {
+  createWindow(
+    "Test",
+    ` 
+    <div class="about-content" style="display: flex; justify-content: left; align-items: flex-start; margin-top: 2px;">
+        <img src="/static/img/placeholder.png" alt="About Image" draggable="false" style="max-width: 30%; height: 30%; border: 2px outset #c8c7c7;">
+        <div class="about-text" style="border: 2px inset #fff; margin-left: 5px; width: 300px;">
+          <p>Test<a href="https://google.com/">Test</a></p>
+          <dl>
+          </dl>
+        </div>
+      </div>
+    `,
+    "test-window",
     "100px",
     "100px"
   );
