@@ -191,7 +191,7 @@ function openAboutWindow() {
     'About Me',
     `
       <div class="about-content" style="display: flex; justify-content: center; align-items: flex-start; margin-top: 4px;">
-        <img src="https://whale.lat/static/img/0950ou.png" alt="About Image" draggable="false" style="max-width: 50%; height: 50%; border: 2px outset #c8c7c7;">
+        <img src="https://whale.lat/static/img/0950ou.png" alt="About Image" draggable="false" style="max-width: 50%; height: 50%; border: 2px inset #c8c7c7;">
         <div class="about-text" style="border: 2px inset #fff;">
           <p>Hi there! I'm Lunarion. I'm a 17-year-old high-schooler who has a passion for programming. Feel free to contact me!</p>
           <button class="test-button" onclick="openContactWindow()">Contact</button>
