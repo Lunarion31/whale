@@ -368,7 +368,7 @@ function openPeopleWindow() {
         .map(
           (person) => `
         <div class="icon placeholder-icon" onclick="${person.onClick}">
-          <img src="${person.image}" alt="${person.name}" draggable="false" style="width: 100%; height: 100%;">
+          <img src="${person.image}" alt="${person.name}" draggable="false" style="width: 100%; height: 100%; border: 2px inset #fff">
           <p>${person.name}</p>
         </div>
       `
