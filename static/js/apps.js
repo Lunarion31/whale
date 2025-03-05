@@ -522,6 +522,7 @@ let konamiCodePosition = 0;
 
 document.addEventListener('keydown', function (event) {
   if (event.code === konamiCode[konamiCodePosition]) {
+    console.log(konamiCodePosition);
     konamiCodePosition++;
     if (konamiCodePosition === konamiCode.length) {
       openKonamiWindow();
