@@ -426,6 +426,28 @@ function openScaratekWindow() {
   );
 }
 
+function openxmb9Window() {
+  createWindow(
+    "xmb9",
+    ` 
+    <div class="about-content" style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2px;">
+        <img src="/static/img/xmb9.png" alt="About Image" draggable="false" style="max-width: 29%; height: 28%; border: 2px inset #c8c7c7;">
+        <div class="about-text" style="border: 2px outset #fff; margin-left: 2px; max-width: 100%; padding-left: 7px;">
+          <p>owner of ethereal workshop; i make cool stuff sometimes</p>
+          <dl>
+            <dt> Github: <a href="https://github.com/EnterTheVoid-x86/" target="_blank">EnterTheVoid-x86</a></dt>
+            <dt> Discord: <a href="https://discord.com/users/988950574387068968" target="_blank">xmb9</a></dt>
+            <dt> Ethereal Workshop: <a href="https://etherealwork.shop" target="_blank">https://etherealwork.shop</a></dt>
+          </dl>
+        </div>
+      </div>
+      `,
+    "xmb9-window",
+    "100px",
+    "100px"
+  );
+}
+
 function openBoeingWindow() {
   createWindow(
     "Boeing747",
