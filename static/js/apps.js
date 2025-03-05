@@ -353,13 +353,25 @@ function openChangelogWindow() {
 }
 
 function openPeopleWindow() {
+  const iconSize = 80; // Width and height of each icon (including margin)
+  const iconsPerRow = 4; // Number of icons per row
+  const padding = 20; // Padding around the window content
+
+  // Calculate the number of rows needed
+  const numRows = Math.ceil(peopleList.length / iconsPerRow);
+
+  // Calculate window width and height
+  const windowWidth = iconsPerRow * iconSize + padding * 2;
+  const windowHeight = numRows * iconSize + padding * 2;
+
+  // Generate the content for the "People" window
   const peopleContent = `
-    <div class="desktop-icons">
+    <div class="desktop-icons" style="display: grid; grid-template-columns: repeat(${iconsPerRow}, 1fr); gap: 10px; padding: ${padding}px;">
       ${peopleList
         .map(
           (person) => `
-        <div class="icon placeholder-icon" style="top: 20px; left: 20px;" onclick="${person.onClick}">
-          <img src="${person.image}" alt="${person.name}" draggable="false">
+        <div class="icon placeholder-icon" onclick="${person.onClick}">
+          <img src="${person.image}" alt="${person.name}" draggable="false" style="width: 100%; height: 100%;">
           <p>${person.name}</p>
         </div>
       `
@@ -368,12 +380,15 @@ function openPeopleWindow() {
     </div>
   `;
 
+  // Create the window
   createWindow(
     "People",
     peopleContent,
     "people-window",
     "100px",
-    "450px"
+    "100px",
+    windowWidth, // Pass the calculated width
+    windowHeight // Pass the calculated height
   );
 }
 
