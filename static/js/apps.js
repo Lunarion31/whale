@@ -38,10 +38,12 @@ function startDragging(e) {
   function stopDragging() {
     document.removeEventListener('mousemove', dragWindow);
     document.removeEventListener('mouseup', stopDragging);
+    document.removeEventListener('lostpointercapture', stopDragging);
   }
 
   document.addEventListener('mousemove', dragWindow);
   document.addEventListener('mouseup', stopDragging);
+  document.addEventListener('lostpointercapture', stopDragging);
 }
 
 // window creation
