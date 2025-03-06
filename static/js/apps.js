@@ -198,7 +198,7 @@ function openAboutWindow() {
           <button class="test-button" onclick="openProjectWindow()">Credits</button>
           <button class="test-button" onclick="openTempWindow()">Projects</button>
           <a href="https://whale.lat" target="_blank">
-          <button class="test-button" style="width: 85px; height: 25px; padding: 0; display: flex; justify-content: center; align-items: center; background: #008080">
+          <button class="test-button" style="width: 85px; height: 25px; padding: 0; display: flex; justify-content: center; align-items: center; background: #008080; cursor: pointer;">
             <img src="/static/img/buttons/lumi.png" style="max-width: 100%; max-height: 100%;">
           </button>
           </a>
