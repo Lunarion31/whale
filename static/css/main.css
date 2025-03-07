@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #008080; /* Windows 95 desktop background color */
-  font-family: Monospace, sans-serif;
+  font-family: src: url('../MSW98UI-Regular.ttf'), Monospace, sans-serif;
   overflow: hidden;
 }
 
