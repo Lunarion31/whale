@@ -1,4 +1,11 @@
 /* General Styles */
+
+ @font-face {
+  font-family: 'Win 9x';
+  src: url('../MSW98UI-Regular.ttf') format('truetype');
+  /* ty https://martyr.shop/products/ms-w98-ui */
+}
+
 audio {
   display: none;
 }
@@ -7,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #008080; /* Windows 95 desktop background color */
-  font-family: Monospace, sans-serif;
+  font-family: 'Win 9x', Monospace, sans-serif;
   overflow: hidden;
 }
 
