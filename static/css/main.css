@@ -3,6 +3,7 @@
  @font-face {
   font-family: 'Win 9x';
   src: url('../MSW98UI-Regular.ttf') format('truetype');
+  /* ty https://martyr.shop/products/ms-w98-ui */
 }
 
 audio {
