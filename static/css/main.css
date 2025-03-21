@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #008080; /* Windows 95 desktop background color */
-  font-family: 'Win 9x', Monospace, sans-serif;
+  font-family: 'Win 9x';
   overflow: hidden;
 }
 
@@ -28,7 +28,7 @@ body {
   text-align: center;
   line-height: 16px;
   border: 2px inset #c8c7c7;
-  width: 120px;
+  width: 90px;
   height: 15px;
   background-color: rgba(170, 170, 170, 255);
 }
@@ -183,7 +183,7 @@ input {
   text-align: center;
   line-height: 20px;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 12px;
   border: 2px outset #c0c0c0;
 }
 
@@ -298,7 +298,7 @@ input {
 }
 
 .button-styles {
-  font-family: Monospace, sans-serif;
+  font-family: 'Win 9x';
   background-color: #c8c7c7;
   width: 70px;
   height: 15px;
@@ -315,7 +315,7 @@ input {
 
 .button-styles:active {
   border: 2px inset #c8c7c7;
-  font-family: Monospace, sans-serif;
+  font-family:'Win 9x';
   background-color: #c8c7c7;
   width: 70px;
   height: 15px;
@@ -360,6 +360,7 @@ input {
 .test-button {
   border: 2px outset #c8c7c7;
   cursor:pointer;
+  font-family: 'Win 9x';
 }
 
 .start-button:active {

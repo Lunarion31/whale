@@ -29,7 +29,7 @@ function showBootUpSequence() {
   const textStyles = {
     color: '#fff',
     fontSize: '10px',
-    fontFamily: 'Lucida Console, monospace, sans-serif',
+    fontFamily: 'Win 9x',
   };
 
   // display boot text

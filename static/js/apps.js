@@ -310,8 +310,8 @@ function openProjectWindow() {
   createWindow(
     'Credits',
     `
-    <div class="about-content" style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2px;">
-      <div class="about-text" style="border: 2px inset #fff; margin-left: 2px; max-width: 100%; padding-right: 3px; padding-left: 3px;">
+    <div class="about-content" style="display: flex; justify-content: left; align-items: flex-start; margin-top: 2px;">
+      <div class="about-text" style="border: 2px inset #fff; margin-left: 2px; width: 450px; padding-right: 3px; padding-left: 3px;">
         <p>Thanks to those who helped me:</p>
         <ul>
           <li> yuko, literally made this code better. </li>
