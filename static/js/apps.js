@@ -196,7 +196,7 @@ function openAboutWindow() {
         <img src="https://whale.lat/static/img/0950ou.png" alt="About Image" draggable="false" style="max-width: 50%; height: 50%; border: 2px inset #c8c7c7;">
         <div class="about-text" style="border: 2px inset #fff; height: 140px;">
           <p>Hi there! I'm Lunarion. I'm a 17-year-old high-schooler who has a passion for programming. Feel free to contact me!</p>
-          <p>If you know me and I'm friends with you,feel free to add my button!</p>
+          <p>If you know me and I'm friends with you,feel free to add my button <3 </p>
           <button class="test-button" onclick="openContactWindow()">Contact</button>
           <button class="test-button" onclick="openProjectWindow()">Credits</button>
           <button class="test-button" onclick="openTempWindow()">Projects</button>
