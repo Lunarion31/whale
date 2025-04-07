@@ -58,8 +58,8 @@ function createWindow(title, content, className, top = '100px', left = '100px') 
       <div class="window-titlebar" style="margin-left: 2px; margin-top: 28px; width: 99.8%">
         <div class="window-title" style="margin-left: 5px;">${title}</div>
         <div class="window-buttons" style="margin-right: 7px; margin-top: 3px">
-          <img src="https://whale.lat/static/img/minimize.png" alt="Minimize" class="window-button" onclick="minimizeWindow(this)">
-          <img src="https://whale.lat/static/svg/lyt65r.svg" alt="Close" class="window-button" onclick="closeWindow(this)">
+          <img src="/static/img/minimize.png" alt="Minimize" class="window-button" onclick="minimizeWindow(this)">
+          <img src="/static/svg/lyt65r.svg" alt="Close" class="window-button" onclick="closeWindow(this)">
         </div>
       </div>
       <div class="window-content" style="margin-top: 30px; border: 2px  #c8c7c7;">
@@ -136,7 +136,7 @@ function openTempWindow() {
 function openGLXGearsWindow() {
   createWindow(
     'glxgears',
-    `<img src="https://whale.lat/static/img/glxgears.gif" alt="GLXGears" draggable="false" style="max-width: 100%; height: 100%; border: 2px outset #c8c7c7;">`,
+    `<img src="/static/img/glxgears.gif" alt="GLXGears" draggable="false" style="max-width: 100%; height: 100%; border: 2px outset #c8c7c7;">`,
     'glxgears-window',
     '150px',
     '100px'
@@ -146,7 +146,7 @@ function openGLXGearsWindow() {
 function openPaperWindow() {
   createWindow(
     'paper',
-    `<img src="https://whale.lat/static/img/paper.gif" alt="Paper" draggable="false" style="max-width: 100%; height: 100%; border: 2px outset #c8c7c7;">`,
+    `<img src="/static/img/paper.gif" alt="Paper" draggable="false" style="max-width: 100%; height: 100%; border: 2px outset #c8c7c7;">`,
     'paper-window',
     '150px',
     '100px'
@@ -156,7 +156,7 @@ function openPaperWindow() {
 function openTuxWindow() {
   createWindow(
     'tux',
-    `<img src="https://whale.lat/static/img/tux.gif" alt="Tux" draggable="false" style="max-width: 100%; height: 100%; border: 2px outset #c8c7c7;">`,
+    `<img src="/static/img/tux.gif" alt="Tux" draggable="false" style="max-width: 100%; height: 100%; border: 2px outset #c8c7c7;">`,
     'tux-window',
     '150px',
     '100px'
@@ -169,15 +169,15 @@ function openCoolWindow() {
     `
       <div class="desktop-icons">
         <div class="icon glxgears-icon" style="top: 20px; left: 20px;" onclick="openGLXGearsWindow()">
-          <img src="https://whale.lat/static/img/glxgears.png" alt="GlxGears" draggable="false">
+          <img src="/static/img/glxgears.png" alt="GlxGears" draggable="false">
           <p>glxgears</p>
         </div>
         <div class="icon tux-icon" style="top: 20px; left: 100px;" onclick="openTuxWindow()">
-          <img src="https://whale.lat/static/img/tux.png" alt="Tux" draggable="false">
+          <img src="/static/img/tux.png" alt="Tux" draggable="false">
           <p>tux</p>
         </div>
         <div class="icon paper-icon" style="top: 20px; left: 180px;" onclick="openPaperWindow()">
-          <img src="https://whale.lat/static/img/paper.png" alt="Paper" draggable="false">
+          <img src="/static/img/paper.png" alt="Paper" draggable="false">
           <p>paper</p>
         </div>
       </div>
@@ -193,7 +193,7 @@ function openAboutWindow() {
     'About Me',
     `
       <div class="about-content" style="display: flex; justify-content: center; align-items: flex-start; margin-top: 4px;">
-        <img src="https://whale.lat/static/img/0950ou.png" alt="About Image" draggable="false" style="max-width: 50%; height: 50%; border: 2px inset #c8c7c7;">
+        <img src="/static/img/0950ou.png" alt="About Image" draggable="false" style="max-width: 50%; height: 50%; border: 2px inset #c8c7c7;">
         <div class="about-text" style="border: 2px inset #fff; height: 140px;">
           <p>Hi there, I'm Lunarion. I'm a 17-year-old high-schooler who has a passion for programming. Feel free to contact me! 
           If you know me and I'm friends with you, you're welcome to add my button <3 <p>
@@ -607,7 +607,7 @@ document.addEventListener('keydown', function (event) {
 function openKonamiWindow() {
   createWindow(
     'You found an easter egg!',
-    `<img src="https://whale.lat/static/img/easteregg.gif" alt="easteregg" draggable="false" style="max-width: 100%; height: 100%; border: 2px outset #c8c7c7;">`,
+    `<img src="/static/img/easteregg.gif" alt="easteregg" draggable="false" style="max-width: 100%; height: 100%; border: 2px outset #c8c7c7;">`,
     'konami-window',
     '100px',
     '100px'
