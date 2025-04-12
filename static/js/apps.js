@@ -367,7 +367,7 @@ function openChangelogWindow() {
           <li>Still working on that eaglercraft thing, spritz</li> 
           <li>Past recent push: 05/25/2024 @ 3:00:24 PM Eastern Standard Time.</li>
           <li>Most recent push: 03/03/2025 @ 7:03:20 PM Eastern Standard Time
-          <li>Minor patch: 09/31/2024 @ 10:34:17 PM Eastern Standard Time. </li>
+          <li>Minor patch: 09/30/2024 @ 10:34:17 PM Eastern Standard Time. </li>
         </ul>
     </div>
     `,
