@@ -550,10 +550,9 @@ function updateClock() {
   const now = new Date();
   const hours = now.getHours();
   const minutes = now.getMinutes();
-  const seconds = now.getSeconds();
   const meridiem = hours >= 12 ? ' PM' : ' AM';
   const formattedHours = hours % 12 || 12;
-  const timeString = `${formattedHours}:${padZero(minutes)}:${padZero(seconds)}${meridiem}`;
+  const timeString = `${formattedHours}:${padZero(minutes)}${meridiem}`;
   document.querySelector('.clock').textContent = timeString;
 }
 

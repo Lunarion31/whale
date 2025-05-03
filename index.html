@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="loading-screen">
+ <div class="loading-screen">
     <div class="loading-text">
       <audio id="myAudio" autoplay>
         <source src="/static/img/videoplayback.mp3" type="audio/mpeg">
@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div class="window welcome-window" style="left: 122px; width: 450px; border: 2px outset #ebebeb;">
+  <div class="window welcome-window" style="left: 122px; width: 450px;">
     <div class="window-titlebar" style="margin-left: 2px; margin-top: 29px; width: 100%">
       <div class="window-title" style="margin-left: 5px;">Welcome to Windows 95!</div>
       <div class="window-buttons" style="margin-right: 5px; margin-top: 3px;">
@@ -32,8 +32,7 @@
         <img src="/static/svg/lyt65r.svg" alt="Minimize" class="window-button" onclick="minimizeWindow(this)">
       </div>
     </div>
-    <div class="about-content"
-      style="display: flex; justify-content: center; align-items: flex-start; margin-top: 30px;">
+    <div class="about-content">
       <img src="/static/img/0950ou.png" alt="About Image" draggable="false"
         style="max-width: 44%; height: 44%; border: 2px inset #c8c7c7;">
       <div class="about-text" style="border: 2px inset #fff; padding-left: 7px; padding-bottom: 40px; height: 150px;">
@@ -50,11 +49,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Sparkles Canvas 
-  <canvas id="sparkleCanvas"></canvas>
-  -->
-
   <div class="desktop-icons">
     <div class="icon notepad-icon" style="top: 20px; left: 20px;" onclick="openNotepadWindow()">
       <img src="/static/img/notepad.png" alt="Notepad" draggable="false">
@@ -88,10 +82,14 @@
   </div>
 
   <div class="start-menu">
-    <div class="start-button" cursor: pointer;>Start</div>
+    <div class="wrapper">
+      <div class="start-button" cursor: pointer;></div>
+    </div>
     <div class="taskbar"></div>
     <div class="start-text" style="margin-left: 140px;">↑ ↑ ↓ ↓ ← → ← → B A</div>
-    <div class="clock" id="clock"></div>
+    <div class="tray">
+      <div class="clock" id="clock"></div>
+    </div>
   </div>
 
   <div class="start-display" style="display: none;">
