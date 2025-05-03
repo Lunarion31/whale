@@ -27,9 +27,9 @@ function showBootUpSequence() {
 
   // styles
   const textStyles = {
-    color: '#fff',
-    fontSize: '10px',
-    fontFamily: 'Win 9x',
+    color: 'whitesmoke',
+    fontSize: '16px',
+    fontFamily: 'IBM VGA 8x16',
   };
 
   // display boot text
