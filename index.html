@@ -17,7 +17,12 @@
 <body>
  <div class="loading-screen">
     <div class="loading-text">
-      <audio id="myAudio" autoplay>
+      <img class="energy_star" src="/static/img/energy_star.png" />
+      <audio id="bios_audio" autoplay preload="auto">
+        <source src="/static/img/bios_startup.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="myAudio">
         <source src="/static/img/videoplayback.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>

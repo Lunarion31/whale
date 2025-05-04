@@ -38,7 +38,7 @@ body {
   line-height: 16px;
   text-align: right;
   border: 2px inset #c8c7c7;
-  width: 50px;
+  width: 45px;
   height: 15px;
   background-color: #c0c0c0;
 }
@@ -56,10 +56,20 @@ body {
   z-index: 9999999999999;
 }
 
+.energy_star {
+  position: fixed;
+  right: 10px;
+}
+
+.award {
+  white-space: nowrap !important;
+}
+
+
 .loading-text {
   font-family: "IBM VGA 8x16";
-  line-height: .5;
-  color: whitesmoke;
+  line-height: .1;
+  color: #a9a9a9;
   font-size: 16px;
 }
 
