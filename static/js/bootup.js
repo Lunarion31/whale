@@ -1,35 +1,34 @@
 function showBootUpSequence() {
   const bootUpText = [
-    "Initializing system...",
-    "System Information:",
-    "Microsoft Windows 95",
-    "4.00.950 b",
-    "IE 4.0 4.72.31.10.8",
-    "Pentium II(r)",
-    "Loading drivers...",
-    "Establishing network connection...",
-    "Performing memory check...",
-    "192.0MB RAM",
-    "Booting operating system...",
-    "Loading user interface...",
-    "Manufactured and supported by:",
-    "Micron Electronics, Inc.",
-    "Micron Computer Systems",
+    "(autoplay may be required for sound)",
+    "Award Modular BIOS 4.50G, An Energy Star Ally",
+    "Copyright (C) 1984-95, Award Software Inc.",
+    "\u00A0",
+    "9/7/95",
+    "\u00A0",
+    "Pentium 4 CPU at 300Mhz",
+    "Memory Test : 128000K OK",
+    "\u00A0",
+    "\u00A0",
+    "Starting Windows 95...",
   ];
 
-  const bootUpDelay = Math.trunc(Math.random() * 80) + 10; // generates a random delay
+  const bootUpDelay = Math.trunc(1 * 550);
   const finalDelay = 500; // delay
   let currentIndex = 0;
 
   const audio = document.getElementById('myAudio');
   const loadingTextContainer = document.querySelector('.loading-text');
   const loadingScreen = document.querySelector('.loading-screen');
+  const audio_bios = document.getElementById('bios_audio');
+
+  audio_bios.play();
 
   // styles
   const textStyles = {
-    color: '#fff',
-    fontSize: '10px',
-    fontFamily: 'Win 9x',
+    color: '#a9a9a9',
+    fontSize: '16px',
+    fontFamily: 'IBM VGA 8x16',
   };
 
   // display boot text
@@ -42,7 +41,9 @@ function showBootUpSequence() {
       currentIndex++;
     } else {
       clearInterval(bootUpInterval);
+      audio.play();
 
+      loadingScreen.style.display = 'none';
       const button = document.createElement('button');
       button.textContent = "Start";
       button.classList.add('button-styles');
